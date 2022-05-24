@@ -19,13 +19,14 @@ void subtract(){
     subtract=n1-n2;
     cout<<n1<<"-"<<n2<<"="<<subtract<<endl;
 
-    
+
 }
+
 void power(){
     int x;
     int n,power=1;
     int first,last=0;
-    
+
     cout<<"enter the base number:"<<endl;
     cin>>n;
     cout<<"enter the exponent of number:"<<endl;
@@ -34,7 +35,7 @@ void power(){
     while(x!=0){
         power*=n;
         x--;
-        
+
 
     }
     cout<<power;
@@ -47,14 +48,26 @@ void fact(){
     cout<<"enter the number for factorial:";
     cin>>i;
     cout<<i<<"!"<<"=";
-    
+
     while(i!=0){
         fact*=i;
         i--;
-        
-        
+
+
     }
     cout<<fact;
+}
+void Modulus(){
+    int x;
+    int n;
+    double modulus=0.00;
+    cout<<"enter the number for numerator:";
+    cin>>x;
+    cout<<"enter the number in denominator:";
+    cin>>n;
+    modulus=x%n;
+    cout<<x<<"%"<<n<<"="<<modulus<<endl;
+
 }
 int main(){
     cout<<"Welcome to basic calculator"<<endl;
@@ -64,9 +77,10 @@ int main(){
     cout<<"2.subtract two number"<<endl;
     cout<<"3.power of a number"<<endl;
     cout<<"4.factorial of a number"<<endl;
+    cout<<"5.modulus of a number"<<endl;
     int n;
     cin>>n;
-    switch(n){
+     switch(n){
         case 1:
         add();
         break;
@@ -78,6 +92,9 @@ int main(){
         case 4:
         fact();
         break;
+        case 5:
+        Modulus();
+        break;
         default:
         cout<<"please type the correct number"<<endl;
         break;
@@ -85,3 +102,5 @@ int main(){
     }
 
 }
+
+
