@@ -102,6 +102,4 @@ int main(){
     }
 
 }
-//abcefd
-//
 
