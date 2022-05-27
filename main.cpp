@@ -69,24 +69,6 @@ void Modulus(){
     cout<<x<<"%"<<n<<"="<<modulus<<endl;
 
 }
-void div(){
-    double num1,num2;
-    cout<<"enter the numerator:";
-    cin>>num1;
-    cout<<"enter the denominator:";
-    cin>>num2;
-    double result=num1/num2;
-    cout<<num1<<"/"<<num2<<"="<<result<<endl;
-}
-void mult(){
-    double num1,num2;
-    cout<<"enter the first number:";
-    cin>>num1;
-    cout<<"enter the second number:";
-    cin>>num2;
-    int result=num1*num2;
-    cout<<num1<<"*"<<num2<<"="<<result<<endl;
-}
 int main(){
     cout<<"Welcome to basic calculator"<<endl;
     cout<<endl;
@@ -96,8 +78,6 @@ int main(){
     cout<<"3.power of a number"<<endl;
     cout<<"4.factorial of a number"<<endl;
     cout<<"5.modulus of a number"<<endl;
-    cout<<"6 divison of a number"<<endl;
-    cout<<"7 multiplication of a number"<<endl;
     int n;
     cin>>n;
      switch(n){
@@ -109,18 +89,11 @@ int main(){
         break;
         case 3:
         power();
-        break;
         case 4:
         fact();
         break;
         case 5:
         Modulus();
-        break;
-        case 6:
-        div();
-        break;
-        case 7:
-        mult();
         break;
         default:
         cout<<"please type the correct number"<<endl;
